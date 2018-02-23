@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-      <h1>Header</h1>
+      <div class="top"></div>
+      <div class="bottom"></div>
   </div>
 </template>
 
@@ -10,9 +11,19 @@ export default {
 }
 </script>
 
-<style style scoped lang="scss">
+<style scoped lang="scss">
+    @import "../style/variables.scss";
     .container {
-        color: white;
-        background-color: #02325f;
+        height: 4.4375rem;
+
+        .top {
+            background-color: $primary;
+            height: 2.5rem;
+        }
+
+        .bottom {
+            background-color: $secondary-darker;
+            height: 0.5rem;
+        }
     }
 </style>

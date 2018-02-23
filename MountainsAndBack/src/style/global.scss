@@ -1,0 +1,32 @@
+@import 'minireset.sass';
+@import 'variables.scss';
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: $font-regular;
+  line-height: 2rem;
+  color: $primary;
+  background-color: $secondary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+body {
+  font-size: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: medium;
+  margin: 0 1rem 0rem 1rem;
+}
+
+h2 {
+  font-weight: lighter;
+  color: $secondary-darker;
+}

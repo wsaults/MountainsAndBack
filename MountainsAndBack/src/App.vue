@@ -19,21 +19,21 @@ export default {
 }
 </script>
 
-<style style scoped lang="scss">
+<style scoped lang="scss">
 #app {
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
+  height: 100%;
 
   .header {
     flex-shrink: 0;
+    margin-top: 0;
   }
 
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+  }
 }
 </style>
