@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/MountainsAndBack/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -192,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519401301257</updated>
-      <workItem from="1519401302380" duration="9467000" />
+      <workItem from="1519401302380" duration="9553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9467000" />
+    <option name="totallyTimeSpent" value="9553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1146" height="1417" extended-state="0" />
@@ -292,7 +292,7 @@
     <entry file="file://$PROJECT_DIR$/MountainsAndBack/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
