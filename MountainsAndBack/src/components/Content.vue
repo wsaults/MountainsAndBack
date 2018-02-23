@@ -75,8 +75,9 @@ export default {
     }
 
     h2 {
-      font-size: 1.5rem;
-      padding-top: .5rem;
+      color: $primary-lighter;
+      font-size: 1.8rem;
+      padding-top: 1rem;
     }
 
     p:first-child:first-letter {
@@ -198,10 +199,10 @@ export default {
     .established {
       align-self: center;
       background-color: $secondary;
-      margin-top: -2rem;
-      padding-top: 3.5rem;
-      padding-bottom: 2rem;
-      z-index: -1;
+      margin-top: -1rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      z-index: 0;
 
       h1 {
         border-bottom: 1px solid $secondary-darker;
