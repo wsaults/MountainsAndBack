@@ -15,6 +15,7 @@ export default {
     @import "../style/variables.scss";
     .container {
         height: 4.4375rem;
+        background-color: $secondary;
 
         .top {
             background-color: $primary;

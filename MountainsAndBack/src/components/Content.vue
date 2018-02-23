@@ -1,27 +1,36 @@
 <template>
   <div class="container">
     <div class="intro-content">
-      <h1>A Really Nice Header</h1>
-      <h2>A Really Nice Subtitle</h2>
+      <h1>M & W</h1>
+      <h2>Our Journey</h2>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
       <div class="divider"></div>
     </div>
     <div class="timeline">
+      <div class="line"></div>
       <div class="established">
         <h1><span>ESTABLISHED</span></h1>
-        <h2>2000</h2>
+        <h2>2016</h2>
       </div>
       <ul class="polaroids">
         <li>
-          <a href="" title="January 1st 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <a href="" title="September 9th, 2016"><img src="../assets/2016-09-04.jpg" alt="Test" title="Test"/></a>
+          <p>Ridng the cable car in Aspen! Seriously, it's really cool!</p>
         </li>
         <li>
-          <a href="" title="January 1st 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <a href="" title="September 9th, 2016"><img src="../assets/2016-09-04-1.jpg" alt="Test" title="Test"/></a>
+          <p>Made it to the top of the mountain!</p>
         </li>
         <li>
-          <a href="" title="January 1st 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <a href="" title="January 1st, 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <p>Some really awesome stuff that I want to talk about. Seriously, it's really cool.</p>
         </li>
         <li>
-          <a href="" title="January 1st 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <a href="" title="January 1st, 2000"><img src="../assets/me.jpeg" alt="Test" title="Test"/></a>
+          <p>Some really awesome stuff that I want to talk about. Seriously, it's really cool.</p>
         </li>
       </ul>
     </div>
@@ -42,8 +51,32 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "../style/variables.scss";
+
   h1, h2 {
     font-weight: normal;
+  }
+
+  .intro-content {
+    background-color: $secondary;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding-top: .5rem;
+    }
+  }
+
+  .content {
+    display: flex;
+
+    p {
+      margin: 2rem 1.5rem;
+      color: primary-darker;
+    }
   }
 
   .divider {
@@ -56,8 +89,19 @@ export default {
     display: flex;
     flex-flow: column;
 
+    .line {
+      position: absolute;
+      left: 49%;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      background: $primary;
+      z-index: -1;
+    }
+
     ul.polaroids {
       padding: 0;
+      margin-top: 6rem;
     }
 
     ul.polaroids a:after {
@@ -67,12 +111,19 @@ export default {
     ul.polaroids li {
       background-color: white;
       margin: 1.5rem auto;
+      margin-bottom: 5rem;
       padding: 1.5rem;
       max-width: 420px;
 
       a {
         text-decoration: none;
         color: $primary;
+        font-size: 1.8rem;
+      }
+
+      p {
+        padding-top: .5rem;
+        line-height: 1.2rem;
       }
     }
 
@@ -100,7 +151,6 @@ export default {
       -moz-transform: none;
       transform: none;
       position: relative;
-      top: -5px;
     }
 
     /* Rotate every fifth image by 5 degrees and offset it */
@@ -109,7 +159,6 @@ export default {
       -moz-transform: rotate(5deg);
       transform: rotate(5deg);
       position: relative;
-      right: 5px;
     }
 
     /* Add drop shadows and smooth out the transition (Safari only) */
@@ -124,6 +173,12 @@ export default {
 
   .established {
     align-self: center;
+    background-color: $secondary;
+    margin-top: -2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    z-index: -1;
+
     h1 {
       border-bottom: 1px solid $secondary-darker;
       line-height: 0.1em;

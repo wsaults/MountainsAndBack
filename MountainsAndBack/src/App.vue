@@ -24,6 +24,7 @@ export default {
   display: flex;
   flex-flow: column;
   height: 100%;
+  overflow: scroll;
 
   .header {
     flex-shrink: 0;
