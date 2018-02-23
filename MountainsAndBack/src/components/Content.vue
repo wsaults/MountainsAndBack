@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="intro-content">
-      <h1>M & W</h1>
+      <h1>A Really Nice Header</h1>
       <h2>Our Journey</h2>
       <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -56,17 +56,36 @@ export default {
     font-weight: normal;
   }
 
+  .container {
+    background-image: url('../assets/diamond_grid.png');
+    background-repeat: 50% 50% repeat;
+    z-index: -5;
+  }
+
   .intro-content {
     background-color: $secondary;
 
     h1 {
-      font-size: 4rem;
+      padding-top: 1rem;
+      font-size: 3rem;
       line-height: 3rem;
+      font-family: Futura;
     }
 
     h2 {
       font-size: 1.5rem;
       padding-top: .5rem;
+    }
+
+    p:first-child:first-letter {
+      color: $primary-lighter;
+      float: left;
+      font-family: Georgia;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px;
     }
   }
 
@@ -81,7 +100,10 @@ export default {
 
   .divider {
     background-color: $secondary-darker;
-    height: 0.5rem;
+    height: 1rem;
+
+    background-image: url('../assets/texas-star-border.png');
+    background-repeat: repeat-x;
   }
 
   .timeline {
@@ -184,6 +206,7 @@ export default {
       line-height: 0.1em;
       font-size: 1rem;
       margin: .7rem auto;
+      font-family: Futura;
 
       span {
         background: $secondary;
@@ -197,6 +220,7 @@ export default {
       font-weight: bold;
       line-height: 5.5rem;
       height: 6rem;
+      font-family: Futura;
     }
   }
 </style>
