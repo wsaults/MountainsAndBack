@@ -71,7 +71,7 @@ export default {
   }
 
   .content {
-    display: flex;
+    // display: flex;
 
     p {
       margin: 2rem 1.5rem;
