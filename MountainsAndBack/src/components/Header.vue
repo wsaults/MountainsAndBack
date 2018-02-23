@@ -73,6 +73,12 @@ export default {
 
             background-image: url('../assets/fleur-de-lis-border.png');
             background-repeat: repeat-x;
+
+            -webkit-transition: -webkit-transform .15s linear;
+            -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.25);
+            -moz-box-shadow: 0 1px 4px rgba(0,0,0,.25);
+            transition: -webkit-transform .15s linear;
+            box-shadow: 0 1px 4px rgba(0,0,0,.25);
         }
     }
 </style>

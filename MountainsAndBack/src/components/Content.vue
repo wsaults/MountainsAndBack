@@ -58,12 +58,14 @@ export default {
 
   .container {
     background-image: url('../assets/diamond_grid.png');
-    background-repeat: 50% 50% repeat;
+    background-repeat: repeat;
     z-index: -5;
   }
 
   .intro-content {
     background-color: $secondary;
+    background-image: url('../assets/bg-pattern.png');
+    background-repeat: repeat;
 
     h1 {
       padding-top: 1rem;
@@ -108,6 +110,7 @@ export default {
 
   .timeline {
     margin-top: 1rem;
+    margin-bottom: 20rem;
     display: flex;
     flex-flow: column;
 
@@ -118,7 +121,7 @@ export default {
       bottom: 0;
       width: 10px;
       background: $primary;
-      z-index: -1;
+      z-index: -2;
     }
 
     ul.polaroids {
@@ -135,7 +138,7 @@ export default {
       margin: 1.5rem auto;
       margin-bottom: 5rem;
       padding: 1.5rem;
-      max-width: 420px;
+      max-width: 320px;
 
       a {
         text-decoration: none;
@@ -191,36 +194,36 @@ export default {
       transition: -webkit-transform .15s linear;
       box-shadow: 0 3px 6px rgba(0,0,0,.25);
     }
-  }
 
-  .established {
-    align-self: center;
-    background-color: $secondary;
-    margin-top: -2rem;
-    padding-top: 3.5rem;
-    padding-bottom: 2rem;
-    z-index: -1;
+    .established {
+      align-self: center;
+      background-color: $secondary;
+      margin-top: -2rem;
+      padding-top: 3.5rem;
+      padding-bottom: 2rem;
+      z-index: -1;
 
-    h1 {
-      border-bottom: 1px solid $secondary-darker;
-      line-height: 0.1em;
-      font-size: 1rem;
-      margin: .7rem auto;
-      font-family: Futura;
+      h1 {
+        border-bottom: 1px solid $secondary-darker;
+        line-height: 0.1em;
+        font-size: 1rem;
+        margin: .7rem auto;
+        font-family: Futura;
 
-      span {
-        background: $secondary;
-        padding:0 5px;
+        span {
+          background: $secondary;
+          padding:0 5px;
+        }
       }
-    }
 
-    h2 {
-      color: $primary;
-      font-size: 5.5rem;
-      font-weight: bold;
-      line-height: 5.5rem;
-      height: 6rem;
-      font-family: Futura;
+      h2 {
+        color: $primary-lighter;
+        font-size: 5.5rem;
+        font-weight: bold;
+        line-height: 5.5rem;
+        height: 6rem;
+        font-family: Futura;
+      }
     }
   }
 </style>
